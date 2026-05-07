@@ -8,18 +8,10 @@
       "unzip",
       "zip"
     ],
-"php_extensions": [
-  "curl",
-  "dom",
-  "fileinfo",
-  "mbstring",
-  "openssl",
-  "pdo",
-  "xml",
-  "pdo_pgsql",
-  "redis"
-]
-
+    "php_extensions": [
+      "pdo_pgsql",
+      "redis"
+    ]
   },
   "steps": {
     "install:composer": "composer install --no-dev --optimize-autoloader --no-interaction",
