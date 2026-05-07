@@ -14,12 +14,12 @@
       "pkg-config"
     ]
   },
-  "steps": {
-    "prepare": "apt-get update && apt-get install -y re2c bison build-essential autoconf pkg-config",
-    "install:composer": "composer install --no-dev --optimize-autoloader --no-interaction",
-    "install:node": "npm ci",
-    "build": "npm run build"
-  },
+ "steps": {
+  "prepare": "apt-get update && apt-get install -y re2c",
+  "install:composer": "composer install --no-dev --optimize-autoloader --no-interaction",
+  "install:node": "npm ci",
+  "build": "npm run build"
+}
   "deploy": {
     "command": "php artisan optimize:clear && php artisan serve --host=0.0.0.0 --port=$PORT"
   }
