@@ -1,1 +1,1 @@
-{"packages":{"php":"8.4","bison":"latest","re2c":"latest","libxml2":"latest","libsqlite3-dev":"latest","libssl-dev":"latest","libcurl4-openssl-dev":"latest","libpng-dev":"latest","libjpeg-dev":"latest","libonig-dev":"latest","libzip-dev":"latest"}}
+{"$schema":"https://schema.railpack.com","packages":{"mise":{"php":"8.4"}}}
