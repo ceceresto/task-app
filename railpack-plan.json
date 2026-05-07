@@ -6,10 +6,15 @@
       "libzip-dev",
       "git",
       "unzip",
-      "zip"
-    ],
-    "php_extensions": []
+      "zip",
+      "re2c",
+      "bison",
+      "build-essential",
+      "autoconf",
+      "pkg-config"
+    ]
   },
+  "php_extensions": [],
   "steps": {
     "install:composer": "composer install --no-dev --optimize-autoloader --no-interaction",
     "install:node": "npm ci",
