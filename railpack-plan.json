@@ -15,6 +15,7 @@
     ]
   },
   "steps": {
+    "prepare": "apt-get update && apt-get install -y re2c bison build-essential autoconf pkg-config",
     "install:composer": "composer install --no-dev --optimize-autoloader --no-interaction",
     "install:node": "npm ci",
     "build": "npm run build"
