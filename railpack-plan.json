@@ -7,10 +7,6 @@
       "git",
       "unzip",
       "zip"
-    ],
-    "php_extensions": [
-      "pdo_pgsql",
-      "redis"
     ]
   },
   "steps": {
