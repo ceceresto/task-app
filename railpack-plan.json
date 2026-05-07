@@ -1,0 +1,31 @@
+{
+  "packages": {
+    "apt": [
+      "libpq-dev",
+      "libssl-dev",
+      "libzip-dev",
+      "git",
+      "unzip",
+      "zip"
+    ],
+    "php_extensions": [
+      "curl",
+      "dom",
+      "fileinfo",
+      "mbstring",
+      "openssl",
+      "pdo",
+      "xml",
+      "pdo_pgsql",
+      "redis"
+    ]
+  },
+  "steps": {
+    "install:composer": "composer install --no-dev --optimize-autoloader --no-interaction",
+    "install:node": "npm ci",
+    "build": "npm run build"
+  },
+  "deploy": {
+    "command": "php artisan optimize:clear && frankenphp run --config /Caddyfile"
+  }
+}
